@@ -65,7 +65,7 @@ def main(directory, url, format):
         data = walk(directory)
         print(format_data(data, format))
     elif url:
-        print url
+        print(url)
     if output:
         output_file(data, output)
 
