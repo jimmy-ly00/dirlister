@@ -73,7 +73,7 @@ if __name__ == "__main__":
     if len(sys.argv) <= 1:
         print('[*] DirLister - Generate wordlists from source codes.\n')
         #banner()
-        print('Usage: python DirLister.py -d directory -o output')
+        print('Usage: python dirlister.py -d directory -o output')
         print('{} -h for help.'.format(sys.argv[0]))
         exit(0)
 
