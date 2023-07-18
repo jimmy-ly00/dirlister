@@ -5,14 +5,19 @@ Generates wordlists to use for enumeration and brute-forcing files and directori
 ### Screenshots
 ![DirLister](https://i.imgur.com/eIGgDti.png  "Example usage of DirLister")
 
+## Installation
+```
+pip install dirlister
+```
+
 ### Usage
 Extract filenames and folders: `python dirlister.py -d sample`
 
-Extract all formats :`python dirlister.py -d sample -o output`
+Extract all formats :`dirlister.py -d sample -o output`
 
 ```
-root@kali:~# python dirlister.py -h
-usage: dirlister.py [-h] [-d DIR] [-u URL] [-f {1,2,3,4,5}] [-o OUTPUT]
+root@kali:~# dirlister -h
+usage: dirlister [-h] [-d DIR] [-u URL] [-f {1,2,3,4,5}] [-o OUTPUT]
 
 optional arguments:
   -h, --help            show this help message and exit

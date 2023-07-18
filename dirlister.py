@@ -60,7 +60,7 @@ def output_file(data, output_filename):
 def banner():
     print("")
 
-def main(directory, url, format):
+def main(directory, url, format, output):
     if directory:
         data = walk(directory)
         print(format_data(data, format))
@@ -69,7 +69,7 @@ def main(directory, url, format):
     if output:
         output_file(data, output)
 
-if __name__ == "__main__":
+def interactive():
     if len(sys.argv) <= 1:
         print('[*] DirLister - Generate wordlists from source codes.\n')
         #banner()
@@ -88,7 +88,10 @@ if __name__ == "__main__":
         exit(0)
 
     try:
-        main(directory, url, format)
+        main(directory, url, format, output)
     except KeyboardInterrupt:
         print('\nKeyboardInterrupt Detected.\nExiting...')
         exit(0)
+
+if __name__ == "__main__":
+    interactive()
