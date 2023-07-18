@@ -11,8 +11,8 @@ Extract filenames and folders: `python dirlister.py -d sample`
 Extract all formats :`python dirlister.py -d sample -o output`
 
 ```
-root@kali:~# python DirLister.py -h
-usage: DirLister.py [-h] [-d DIR] [-u URL] [-f {1,2,3,4,5}] [-o OUTPUT]
+root@kali:~# python dirlister.py -h
+usage: dirlister.py [-h] [-d DIR] [-u URL] [-f {1,2,3,4,5}] [-o OUTPUT]
 
 optional arguments:
   -h, --help            show this help message and exit
